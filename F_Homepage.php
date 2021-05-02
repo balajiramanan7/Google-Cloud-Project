@@ -158,7 +158,7 @@ body, html {
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="courses.jpg" alt="pic1" style="width:300px;height:300px;">
+      <img src="https://thumbs.dreamstime.com/z/concept-online-exam-testing-questionnaire-form-education-survey-internet-quiz-isometric-vector-illustration-163649153.jpg" alt="pic1" style="width:300px;height:300px;">
     </div>
     <div class="flip-card-back">
       <br><br><br><br><br>
