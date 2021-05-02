@@ -1,0 +1,14 @@
+application: vernal-hall-304811
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /(.+\.(php|js|css|jpg))$
+  script: \1
+
+- url: /.*
+  script: Student_Login_Firebase.php
+
+
+
