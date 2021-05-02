@@ -42,6 +42,10 @@ function startQuiz(){
         }
         formattedSeconds = seconds<10 ? `0${seconds}` : seconds
         formattedMinutes = minutes<10 ? `0${minutes}` : minutes
+        if(formattedMinutes == 2 && formattedSeconds == 1){
+            alert("Time is up!")
+            appendResult()
+        }
         document.getElementById("timer").innerHTML = `${formattedMinutes}:${formattedSeconds}`
     }, 1000)
 }
@@ -135,26 +139,7 @@ function adminPanel(){
     document.getElementById("mainPanel").style.display = "flex"
     appendAllQuestions()
 }
-function homePageReAttempt(){
-    // we also need to clear the result table
-    var first = document.getElementById("quizHeader").firstChild
-    first.remove()
-    first = document.getElementById("quizBody").firstChild
-    while(first){
-        first.remove()
-        first = document.getElementById("quizBody").firstChild
-    }
-    clearInterval(interval)//the quiz time also needs to be reset
-    document.getElementById("mainBody").style.display = "none"
-    document.getElementById("startBtn").style.display = "block"
-    document.getElementById("adminBtn").style.display = "block"
-    document.getElementById("exitBtn").style.display = "block"
-    document.getElementById("quizHeader").style.justifyContent = "space-between"
-    answers = []//clear the correct answers
-    qNum = 0//reset question number
-    seconds = 0
-    minutes = 0
-}
+
 function homePage(){
     document.getElementById("mainBody").style.display = "none"
     document.getElementById("startBtn").style.display = "block"

@@ -346,7 +346,7 @@ li
 
         <!-- ==================Home Page================ -->
         <div class="buttons">
-        <button class="button" id="startBtn" onclick="startQuiz()">Start Quiz</button>
+        <button class="button" disabled id="startBtn" onclick="startQuiz()">Start Quiz</button>
         <button class="button" id="adminBtn" onclick="adminPanel()">Create Quiz</button>
         </div>
         <!-- ==================Quiz Body================ -->
