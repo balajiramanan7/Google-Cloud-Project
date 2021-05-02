@@ -170,7 +170,7 @@ h1{
 
     firebase.auth().signInWithEmailAndPassword(email,password).then(function(){
       alert('Verification Successful');
-      window.location.href = "S_Homepage.php";
+      window.location.href = "F_Homepage.php";
     }).catch(function(error){
       console.log("pochu pochu");
       alert('Verification failure ');
